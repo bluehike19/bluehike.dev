@@ -20,10 +20,49 @@ a {
 .container {
   width: 1236px;
   margin: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1536px) {
+  .container {
+    width: 1356px;
+  }
+}
+
+@media (max-width: 1356px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 1024px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 475px;
+  }
 }
