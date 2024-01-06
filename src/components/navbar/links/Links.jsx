@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavLink from "./navLink.jsx/NavLink";
 
 const Links = () => {
   const links = [
@@ -20,13 +21,23 @@ const Links = () => {
     },
   ];
 
+  //temporary
+  const session = true
+  const isAdmin = true
+
   return (
     <div>
       {links.map((link) => (
-        <Link href={link.path} key={link.title}>
-          {link.title}
-        </Link>
+        <NavLink item={link} key={link.title} />
       ))}
+      {session ? (
+        <>
+        {isAdmin && <NavLink item={{ title: "Admin", path: "/admin"}} />}
+        <button>Logout</button>
+        </>
+      ) : (
+        <NavLink item={{ title: "Login", path: "/login"}} />
+      )}
     </div>
   );
 };
