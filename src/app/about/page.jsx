@@ -4,7 +4,6 @@ import styles from './about.modules.css'
 const AboutPage = () => {
   return <div>
     <div className={styles.imgContainer}>
-
     <Image src='/about.png' alt="" fill/>
     </div>
   </div>;
