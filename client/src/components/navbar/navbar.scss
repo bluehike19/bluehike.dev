@@ -2,6 +2,128 @@
 
 .navbar {
   @include themify($themes) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 20px;
+    height: 50px;
+    border-bottom: 1px solid themed("border");
+    position: sticky;
+    top: 0;
     background-color: themed("bg");
     color: themed("textColor");
+    z-index: 999;
+
+    .left {
+      flex: 1.5;
+     display: flex;
+     align-items: center;
+     gap: 30px;
+
+     .logo {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 25px;
+      color: themed("textColor");
+      font-weight: 800;
+     }
+    }
+
+    .right {
+      flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+
+    .navbarLinks {
+      display: flex;
+      gap: 50px;
+
+      @include mobile {
+        display: none;
+      }
+
+      @include largeMobile {
+        display: none;
+      }
+      
+      
+      .navbarLink {
+        display: inline-block;
+        font-weight: 700;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: themed("textColorSoft");
+        border-radius: 25px;
+        transition: background-color 0.2s ease-in;
+
+        
+        &:hover {
+          background-color: themed("bgSoft");
+        }
+
+        // &:active,
+        &.active {
+          color: rgb(164, 208, 250);
+          background-color: rgb(39, 63, 95);
+         
+        }
+      }
+    }
+
+    .navbarIcons {
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+      font-weight: 700;
+
+      @include mobile {
+        justify-content: space-around;
+        margin-left: 40px;
+        gap: 15px;
+      }
+
+      @include tablet {
+        justify-content: space-around;
+        margin-left: 60px;
+        gap: 15px;
+      }
+      
+
+      .navbarIcon {
+        padding: 10px 10px;
+        color: themed("textColor");
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: themed("bgSoft");
+        }
+
+
+      }
+
+      .toggleIcons {
+        display: none;
+       
+
+        
+      @include mobile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      @include largeMobile {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      
+      }
+    }
+    }
   }}

@@ -45,8 +45,21 @@ $themes: (
     @content;
   }
 }
+
+@mixin largeMobile {
+  @media (max-width: 640px) {
+    @content
+  }
+}
+
 @mixin tablet {
   @media (max-width: 960px) {
     @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: 1280px) {
+    @content
   }
 }

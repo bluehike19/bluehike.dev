@@ -3,5 +3,5 @@
 .home {
   @include themify($themes) {
     background-color: themed("bgSoft");
-    color: themed("text");
+    color: themed("textColor");
   }}
