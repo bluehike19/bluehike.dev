@@ -10,6 +10,7 @@ import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
 import Photography from './pages/photography/Photography';
 import Blog from './pages/blog/Blog';
+import About from './pages/about/About';
 
 
 const App =() => {
@@ -22,7 +23,7 @@ const App =() => {
       <Route path="/projects" Component={Projects} />
         <Route path="/photography" Component={Photography} />
         <Route path="/blog" Component={Blog} />
-        {/* <Route path="/success" Component={Success} /> */}
+        <Route path="/about" Component={About} />
       </Routes>
     </Router>
    </div>
