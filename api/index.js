@@ -12,6 +12,8 @@ const cors = require("cors")
 
 dotenv.config()
 app.use(express.json())
+app.use("/images", express.static(path.join(__dirname, "/images")))
+
 
 
 //DATABASE
@@ -41,7 +43,6 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 
 //MIDDLEWARES
 
-app.use("/images", express.static(path.join(__dirname, "/images")))
 app.use(cors({origin:"http://localhost:3000", credentials: true}))
 app.use("/api/auth", authRoute)
 app.use("/api/users", userRoute)

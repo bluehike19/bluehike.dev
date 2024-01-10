@@ -1,0 +1,1 @@
+export const IF = process.env.REACT_APP_IF;

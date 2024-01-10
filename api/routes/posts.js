@@ -19,7 +19,7 @@ try {
    const post = await Post.findById(req.params.id)
    if (post.username === req.body.username) {
     try {
-        const updatedUser = await Post.findByIdAndUpdate(
+        const updatedPost = await Post.findByIdAndUpdate(
             req.params.id,
             {
                 $set: req.body,
