@@ -1,4 +1,6 @@
 @import "../../style.scss";
 
 .blog {
-  @include themify($themes) {}}
+  @include themify($themes) {
+    display: flex;
+  }}
