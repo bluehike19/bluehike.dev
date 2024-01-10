@@ -11,6 +11,7 @@ import Projects from './pages/projects/Projects';
 import Photography from './pages/photography/Photography';
 import Blog from './pages/blog/Blog';
 import About from './pages/about/About';
+import SinglePage from './pages/singlePage/SinglePage';
 
 
 const App =() => {
@@ -22,7 +23,8 @@ const App =() => {
       <Route path="/" exact Component={Home} />
       <Route path="/projects" Component={Projects} />
         <Route path="/photography" Component={Photography} />
-        <Route path="/blog" Component={Blog} />
+        <Route path="/post" Component={Blog} />
+        <Route path="/post/:id" Component={SinglePage} />
         <Route path="/about" Component={About} />
       </Routes>
     </Router>

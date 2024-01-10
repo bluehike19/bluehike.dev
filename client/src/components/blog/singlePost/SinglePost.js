@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import "./singlePage.scss"
-import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
 import { Context } from "../../../context/UserContext"
 import axios from "axios"
 
@@ -47,7 +48,45 @@ const SinglePost = () => {
     }
 
   return (
-    <div>SinglePost</div>
+    <div className='singlePost'>
+        <div className='singlePostWrapper'>
+            {post.photo && (
+                <img src={post.photo} alt='' className='singlePostImg' />
+            )}
+            {updateMode ? (
+                <input type='text' value={title} className='singlePostTitleInput' autoFocus onChange={(e) => setTitle(e.target.value)} />
+            ) : (
+                <h1 className='singlePostTitle'>
+                    {title}
+                    {post.username === user?.username && (
+                        <div className='singlePostEdit'>
+                            <i className='singlePostIcon far fa-edit' onClick={() => setUpdateMode(true)}></i>
+                            <i className='singlePostIcon fa-trash-alt' onClick={handleDelete}></i>
+                        </div>
+                    )}
+                </h1>
+            )}
+            <div className='singlePostInfo'>
+                <span className='singlePostAuthor'>
+                    Author:
+                    <Link to={`/?users=${post.username}`} className='link'>
+                        <b>{post.username}</b>
+                    </Link>
+                </span>
+                <span className='singlePostDate'>
+                    {new Date(post.createdAt).toDateString()}
+                </span>
+            </div>
+            {updateMode ? (
+                <textarea className='singlePostDescInput' value={desc} onChange={(e) => setDesc(e.target.value)} />
+            ): (
+                <p className='singlePostDesc'>{desc}</p>
+            )}
+            {updateMode && (
+                <button className='singlePostButton' onClick={handleUpdate}>Update</button>
+            )}
+        </div>
+    </div>
   )
 }
 

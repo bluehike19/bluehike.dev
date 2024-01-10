@@ -1,8 +1,11 @@
 import React from 'react'
+import SinglePost from '../../components/blog/singlePost/SinglePost'
 
 const SinglePage = () => {
   return (
-    <div>SinglePage</div>
+    <div className='single'>
+        <SinglePost />
+    </div>
   )
 }
 
