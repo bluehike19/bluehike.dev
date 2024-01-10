@@ -1,7 +1,6 @@
 import React from 'react'
 import "./post.scss"
 import { Link } from 'react-router-dom'
-import {IF} from '../../../url'
 
 
 // {post.categories && Array.isArray(post.categories) && (
@@ -16,7 +15,7 @@ const Post = ({post}) => {
     // const PF = "http://localhost:5000/images/";
   return (
     <div className='post'>
-        {post.photo &&  <img className='postImg' src={IF + post.photo}  alt='' />}
+        {post.photo &&  <img className='postImg' src={post.photo}  alt='' />}
         <div className='postInfo'>
             <div className='postCats'>
                 {post.categories && Array.isArray(post.categories) && ( post.categories.map((c) => (
