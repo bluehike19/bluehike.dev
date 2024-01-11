@@ -9,7 +9,7 @@ import {
 import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
 import Photography from './pages/photography/Photography';
-import Blog from './pages/blog/Blog';
+import Blog from './pages/blogPage/blog/Blog';
 import About from './pages/about/About';
 import SinglePage from './pages/singlePage/SinglePage';
 

@@ -1,9 +1,9 @@
 import { useLocation } from "react-router-dom"
-import Footer from "../../components/footer/Footer"
-import Navbar from "../../components/navbar/Navbar"
+import Footer from "../../../components/footer/Footer"
+import Navbar from "../../../components/navbar/Navbar"
 import "./blog.scss"
 import React, { useEffect, useState } from 'react'
-import Posts from "../../components/blog/posts/Posts"
+import Posts from "../../../components/blog/posts/Posts"
 import axios from "axios"
 
 const Blog = () => {
