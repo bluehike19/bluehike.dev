@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import "./singlePage.scss"
+import "./singlePost.scss"
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { Context } from "../../../context/UserContext"
