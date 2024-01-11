@@ -23,8 +23,8 @@ const App =() => {
       <Route path="/" exact Component={Home} />
       <Route path="/projects" Component={Projects} />
         <Route path="/photography" Component={Photography} />
-        <Route path="/posts" Component={Blog} />
-        <Route path="/posts/:id" Component={SinglePage} />
+        <Route path="/blog" Component={Blog} />
+        <Route path="/blog/:id" Component={SinglePage} />
         <Route path="/about" Component={About} />
       </Routes>
     </Router>

@@ -11,7 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const currentPath = location.pathname;
-    const links = ['/projects', '/photography', '/posts', '/about']; 
+    const links = ['/projects', '/photography', '/blog', '/about']; 
 
     const index = links.findIndex((link) => link === currentPath);
     setActiveLink(index);
@@ -40,7 +40,7 @@ const Navbar = () => {
           </Link>
           <Link
             className={activeLink === 2 ? 'navbarLink active' : 'navbarLink'}
-            to="/posts"
+            to="/blog"
           >
             Blog
           </Link>
