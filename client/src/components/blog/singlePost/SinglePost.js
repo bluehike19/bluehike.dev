@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import "./singlePage.scss"
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import { Context } from "../../../context/UserContext"
 import axios from "axios"
 
@@ -17,7 +17,7 @@ const SinglePost = () => {
 
     useEffect(() => {
         const getPost = async () => {
-            const res = await axios.get("/posts/" + path)
+            const res = await axios.get("http://localhost:5000/api/posts/" + path)
             setPost(res.data)
             setTitle(res.data.title)
             setDesc(res.data.desc)
