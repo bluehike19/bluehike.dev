@@ -34,7 +34,11 @@ const Home = () => {
   return(
     <>
     <Navbar />
-    <div className='home'></div>
+    <div className='home'>
+      <div className='softwareIntro'></div>
+      <div className='projectIntro'></div>
+      <div className='photoIntro'></div>
+    </div>
       
         <Footer />
     </>
