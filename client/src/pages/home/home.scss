@@ -7,6 +7,9 @@
 
     .softwareIntro {
       display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 90vh;
 
 
       .wordIntro {
@@ -15,5 +18,14 @@
       .PhotoIntro {
         flex: 1;
       }
+    }
+
+    .projectIntro {
+
+      height: 90vh;
+    }
+
+    .PhotoIntro {
+      height: 90vh;
     }
   }}
