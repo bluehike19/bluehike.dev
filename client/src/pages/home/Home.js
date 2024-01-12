@@ -35,7 +35,10 @@ const Home = () => {
     <>
     <Navbar />
     <div className='home'>
-      <div className='softwareIntro'></div>
+      <div className='softwareIntro'>
+        <div className='wordIntro'>Hello</div>
+        <div className='photoIntro'>photo</div>
+      </div>
       <div className='projectIntro'></div>
       <div className='photoIntro'></div>
     </div>

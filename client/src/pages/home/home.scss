@@ -4,4 +4,16 @@
   @include themify($themes) {
     background-color: themed("bgSoft");
     color: themed("textColor");
+
+    .softwareIntro {
+      display: flex;
+
+
+      .wordIntro {
+        flex: 1;
+      }
+      .PhotoIntro {
+        flex: 1;
+      }
+    }
   }}
