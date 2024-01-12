@@ -2,7 +2,7 @@
 
 .home {
   @include themify($themes) {
-    background-color: themed("bgSoft");
+    background-color: themed("bg");
     color: themed("textColor");
 
     .softwareIntro {
@@ -10,6 +10,7 @@
       align-items: center;
       justify-content: flex-start;
       height: 90vh;
+      background-color: themed('bgSoft');
 
 
       .wordIntro {
@@ -23,9 +24,45 @@
     .projectIntro {
 
       height: 90vh;
+      .bg-image {
+        background-image: url("simo.png");
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      .bg-text {
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+      }
     }
-
-    .PhotoIntro {
-      height: 90vh;
-    }
+    
+   
   }}
+
+
+
+  /*
+  .video-grid {
+   .....
+   row-gap: 20px;
+
+   @media (max-width: 700px) {
+    row-gap: 10px;
+   }
+  }
+  */

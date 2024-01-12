@@ -36,11 +36,14 @@ const Home = () => {
     <Navbar />
     <div className='home'>
       <div className='softwareIntro'>
-        <div className='wordIntro'></div>
+        <div className='wordIntro'>hello</div>
         <div className='photoIntro'>photo</div>
       </div>
       <div className='projectIntro'></div>
-      <div className='photoIntro'></div>
+      <div className='photoIntro'>
+        <div className='bg-image'></div>
+        <div className='bg-text'>Hello</div>
+      </div>
     </div>
       
         <Footer />
