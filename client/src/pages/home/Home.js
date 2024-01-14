@@ -37,7 +37,9 @@ const Home = () => {
     <div className='home'>
       <div className='softwareIntro'>
         <div className='wordIntro'>my name is bluehike, a full-stack software developer.</div>
-        <div className='dpIntro'>photo</div>
+        <div className='dpIntro'>
+          <img src='simo.jpg' />
+        </div>
       </div>
       <div className='projectIntro'></div>
       <div className='photoIntro'>
