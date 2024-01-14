@@ -36,7 +36,7 @@ const Home = () => {
     <Navbar />
     <div className='home'>
       <div className='softwareIntro'>
-        <div className='wordIntro'>hello</div>
+        <div className='wordIntro'>my name is bluehike, a full-stack software developer.</div>
         <div className='dpIntro'>photo</div>
       </div>
       <div className='projectIntro'></div>
