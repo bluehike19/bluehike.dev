@@ -4,6 +4,8 @@
   @include themify($themes) {
     background-color: themed("bgSoft");
     color: themed("textColor");
+    font-size: 12px;
+    font-weight: 600;
 
     .bluehike {
       background: #B7DEED;
@@ -12,5 +14,6 @@
       -webkit-text-fill-color: transparent;
       margin-left: 5px;
       margin-right: 5px;
+      font-weight: 800;
     }
   }}
