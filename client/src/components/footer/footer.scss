@@ -4,4 +4,13 @@
   @include themify($themes) {
     background-color: themed("bgSoft");
     color: themed("textColor");
+
+    .bluehike {
+      background: #B7DEED;
+      background: linear-gradient(to right, #B7DEED 0%, #71CEEF 2%, #21B4E2 52%, #B7DEED 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
   }}

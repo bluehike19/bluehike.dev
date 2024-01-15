@@ -15,6 +15,13 @@
 
       .wordIntro {
         flex: 1;
+
+        h1 {
+          background: #B7DEED;
+          background: linear-gradient(to right, #B7DEED 0%, #71CEEF 25%, #21B4E2 75%, #B7DEED 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
       .dpIntro {
         flex: 1;
