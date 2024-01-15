@@ -48,8 +48,14 @@ const Home = () => {
         </div>
       </div>
       <div className='projectIntro'>
-        
-        <h1> I spend most of my time working with JavaScript technologies to develop owesome Application. Right now my mind is focused on developing full-stack applications . I'm more passionate about exploring new technologies, which I can leverage to solve real-life problems and help my community.</h1>
+        <h1 className='projecth1'> 
+        <span data-aos="fade-right" className='span1'>
+        I spend most of my time working with JavaScript technologies to develop owesome Application. 
+        </span>
+        <span data-aos="fade-left">
+        Right now my mind is focused on developing full-stack applications . I'm more passionate about exploring new technologies, which I can leverage to solve real-life problems and help my community.
+        </span>
+        </h1>
       </div>
       <div className='photoIntro'>
         <div className='bg-image'></div>
