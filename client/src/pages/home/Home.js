@@ -47,7 +47,10 @@ const Home = () => {
           <img src='simo.jpg' />
         </div>
       </div>
-      <div className='projectIntro'></div>
+      <div className='projectIntro'>
+        
+        <h1> I spend most of my time working with JavaScript technologies to develop owesome Application. Right now my mind is focused on developing full-stack applications . I'm more passionate about exploring new technologies, which I can leverage to solve real-life problems and help my community.</h1>
+      </div>
       <div className='photoIntro'>
         <div className='bg-image'></div>
         <div className='bg-text' data-aos="fade-down">Hello world. welcome to my worlds</div>
