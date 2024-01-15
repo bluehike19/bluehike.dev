@@ -56,6 +56,13 @@ const Home = () => {
         Right now my mind is focused on developing full-stack applications . I'm more passionate about exploring new technologies, which I can leverage to solve real-life problems and help my community.
         </span>
         </h1>
+        <div className='projectdiv'>
+          <div className='buttons'>
+            <button className='button1'>View on Projects </button>
+            <button  className='button2'>View on GitHub</button>
+          </div>
+          <div className='buttonsText'>You can check some of my projects. Both for fun and Clients just to improve my skills</div>
+        </div>
       </div>
       <div className='photoIntro'>
         <div className='bg-image'></div>

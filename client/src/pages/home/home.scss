@@ -61,12 +61,72 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            margin-bottom: 100px;
 
             .span1 {
               font-size: 24px;
               color: themed('textColorSoft');
             }
+            }
+
+            .projectdiv {
+              display: flex;
+
+              .buttons {
+                flex: 1;
+                display: flex;
+                gap: 40px;
+
+                 
+        .button1 {
+          background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%);
+          margin: 10px;
+          padding: 15px 45px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;            
+          // box-shadow: 0 0 20px #eee;
+          border-radius: 10px;
+          display: block;
+          border: none;
+          
+          &:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
           }
+        }
+              
+       .button2 {
+          background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+          margin: 10px;
+          padding: 15px 45px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;            
+          // box-shadow: 0 0 20px #eee;
+          border-radius: 10px;
+          display: block;
+          border: none;
+          
+          &:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+       
+                
+              }
+
+              .buttonsText {
+                flex: 1;
+              }
+            }
 
 
         }
