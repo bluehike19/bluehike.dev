@@ -131,14 +131,49 @@
 
      }
 
-        .photoIntro {
+        .background {
+          //  background-color: themed('bgSoft');
+            display: grid;
+            place-items: center;
+            height: 100vh;
+          .gallery {
+            display: flex;
+            left: calc(50% - 330px);
+
+            .card {
+              position: relative;
+              left: 0px;
+              width: 310px;
+              height: 360px;
+              // background-color: themed('bg');
+              border-radius: 8px;
+              transition: 1s ease-in-out;
+              overflow: hidden;
+              box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+
+              &:not(:first-child) {
+                margin-left: -45px;
+            }
         
-          .bg-image {
-            img {
-              height: 90vh;
-              width: 98vw;
-              margin-left: auto;
-              margin-right: auto;
+            &:hover {
+                transform: translateY(-16px);
+                font-weight: bold;
+                cursor: pointer;
+            }
+        
+            &:hover ~ .card {
+                left: 55px;
+            }
+             
+              .figure {
+
+                img {
+                  height: 160px;
+                  object-fit: cover;
+                  border-radius: 4px;
+                }
+
+              }
             }
           }
 

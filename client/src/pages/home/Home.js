@@ -64,13 +64,44 @@ const Home = () => {
           <div className='buttonsText'>You can check some of my projects. Both for fun and Clients just to improve my skills</div>
         </div>
       </div>
-      <div className='photoIntro'>
-        <div className='bg-image'>
-          <img src='bluehike.jpg' />
-        </div>
-        <div className='bg-text' data-aos="fade-down">Hello world. welcome to my worlds</div>
+      <div class="background">
+        <div>During my free time I spend most of my time taking photos of nature and beatifull people too</div>
+            <div class="gallery">
+                <div class="card">
+                    <figure>
+                        <img
+                            src="images/forest.jpg"
+                            alt="Forest"
+                        />
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img
+                            src="images/forest-mountain.jpg"
+                            alt="Forest mountains"
+                        />
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img
+                            src="images/lavender-field.jpg"
+                            alt="Lavender Field"
+                        />
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img
+                            src="images/wooden-bridge.jpg"
+                            alt="Wooden Bridge"
+                        />
+                    </figure>
+                </div>
+                </div>
+                </div>
       </div>
-    </div>
       
         <Footer />
     </>
