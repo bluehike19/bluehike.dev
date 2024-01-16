@@ -57,7 +57,7 @@ const Navbar = () => {
             ) : (
               <BsMoon className="navbarIcon" onClick={toggle} />
               )}
-              <a href='https://github.com/simo6lues' target="_blank" rel="noopener noreferrer">
+              <a href='https://github.com/bluehike19' target="_blank" rel="noopener noreferrer">
               <BsGithub className="navbarIcon" />
               </a>
               <div className="toggleIcons">
