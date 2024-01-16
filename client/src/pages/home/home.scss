@@ -4,7 +4,7 @@
   @include themify($themes) {
     background-color: themed("bg");
     color: themed("textColor");
-    padding: 10px 10px;
+    // padding: 10px 10px;
 
     .softwareIntro {
       display: flex;
@@ -49,8 +49,8 @@
           box-shadow:0px 0px 83px 38px #2664a6 ;
         }
       }
-    }
-        .projectIntro {
+     }
+    .projectIntro {
           padding: 20px;
           
           .projecth1 {
@@ -129,10 +129,20 @@
             }
 
 
-        }
+     }
 
         .photoIntro {
         
+          .bg-image {
+            img {
+              height: 90vh;
+              width: 98vw;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+
+          .bg-text {}
       
         }}
    

@@ -65,7 +65,9 @@ const Home = () => {
         </div>
       </div>
       <div className='photoIntro'>
-        <div className='bg-image'></div>
+        <div className='bg-image'>
+          <img src='bluehike.jpg' />
+        </div>
         <div className='bg-text' data-aos="fade-down">Hello world. welcome to my worlds</div>
       </div>
     </div>
