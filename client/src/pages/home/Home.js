@@ -63,15 +63,17 @@ const Home = () => {
           </div>
           <div className='buttonsText'>You can check some of my projects. Both for fun and Clients just to improve my skills</div>
         </div>
-        <div className='projectcard'>
+        <div className='projectcard' data-aos="zoom-in-up">
           <div className='cards'></div>
           <div className='cards'></div>
           <div className='cards'></div>
         </div>
       </div>
       <div class="background">
-        <div>During my free time I spend most of my time taking photos of nature and beatifull people too</div>
-            <div class="gallery">
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">During my free time I spend most of my time taking photos of nature and beatifull people too</div>
+            <div class="gallery"  data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
                 <div class="card">
                     <figure>
                         <img
