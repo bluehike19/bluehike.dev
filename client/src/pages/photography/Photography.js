@@ -26,17 +26,17 @@ const Photography = () => {
          </div>
          <div className="background">hello</div>
         <div className="parallax-container">
-          {/* <img src="simo.jpg" /> */}
+          <img src="client/public/images/swooden-bridge.jpg" />
           </div> 
-        <div style={{height:"1000px", backgroundColor:"brown",fontSize:"36px"}}>
+        <div style={{height:"400px", fontSize:"36px"}}>
           Scroll Up and Down this page to see the parallax scrolling effect.
-          This div is just here to enable scrolling.
-          Tip: Try to remove the background-attachment property to remove the scrolling effect.
-</div>
-        <div className="parallax-container">
-        {/* <img src="simo.jpg" /> */}
-
-        </div>
+         </div>
+         <div className="parallax-container2">
+          <img src="client/public/images/wooden-bridge.jpg" />
+          </div> 
+        <div style={{height:"400px", fontSize:"36px"}}>
+          Scroll Up and Down this page to see the parallax scrolling effect.
+         </div>
       </div>
       <Footer />
     </div>

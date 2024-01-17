@@ -66,16 +66,24 @@
     }
 
     .parallax-container {
-      background-image: url(../../../public/bluehike.jpg);
+      background-image: url('../../../public/images/lavender-field.jpg');
       height: 100%;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
 
-      img {
-        width: 100vw;
-        height: 50vh;
-      }
+   
+    }
+
+    .parallax-container2 {
+      background-image: url('../../../public//images/wooden-bridge.jpg');
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+   
     }
   }}
