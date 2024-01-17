@@ -7,6 +7,18 @@ const Photography = () => {
   return (
     <div>
       <Navbar />
+      <Photography>
+        <div className="blur-container">
+          <div class="bg-image">
+           <img src='images/forest.jpg' />
+          </div>
+          <div class="bg-text">
+            <h1>I am John Doe</h1>
+            <p>And I'm a Photographer</p>
+          </div>
+         </div>
+        <div className="parallax-container"></div> 
+      </Photography>
       <Footer />
     </div>
   )
