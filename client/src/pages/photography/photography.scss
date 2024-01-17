@@ -59,7 +59,9 @@
     }
 
     .background {
-      background-color: themed('bgSoft');
+      background-color: themed('bg');
+      color: themed('textColor');
+      height: 150px;
       font-size: 40px;
       margin-bottom: 50px;
       margin-top: 50px;
@@ -73,7 +75,19 @@
       background-repeat: no-repeat;
       background-size: cover;
 
+      img {
+        height: 40vh;
+        width: 50vw;
+      }
    
+    }
+
+    .imageBackground {
+      height: 50vh;
+      font-size: 36px;
+      background-color: themed('bgSoft');
+      color: themed('textColor');
+
     }
 
     .parallax-container2 {
@@ -84,6 +98,11 @@
       background-repeat: no-repeat;
       background-size: cover;
 
+      img {
+        height: 40vh;
+        width: 50vw;
+      }
    
     }
-  }}
+  }
+}

@@ -28,13 +28,13 @@ const Photography = () => {
         <div className="parallax-container">
           <img src="client/public/images/swooden-bridge.jpg" />
           </div> 
-        <div style={{height:"400px", fontSize:"36px"}}>
+        <div className="imageBackground">
           Scroll Up and Down this page to see the parallax scrolling effect.
          </div>
          <div className="parallax-container2">
           <img src="client/public/images/wooden-bridge.jpg" />
           </div> 
-        <div style={{height:"400px", fontSize:"36px"}}>
+        <div className="imageBackground">
           Scroll Up and Down this page to see the parallax scrolling effect.
          </div>
       </div>
