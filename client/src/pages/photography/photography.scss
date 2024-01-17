@@ -4,7 +4,6 @@
   @include themify($themes) {
     
     .blur-container {
-      overflow: scroll;
       
 
       .bg-image {
@@ -59,5 +58,24 @@
       }
     }
 
-    .parallax-container {}
+    .background {
+      background-color: themed('bgSoft');
+      font-size: 40px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    .parallax-container {
+      background-image: url(../../../public/bluehike.jpg);
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      img {
+        width: 100vw;
+        height: 50vh;
+      }
+    }
   }}
