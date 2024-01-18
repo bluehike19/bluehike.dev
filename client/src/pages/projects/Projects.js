@@ -1,12 +1,13 @@
+import React from 'react'
 import Footer from "../../components/footer/Footer"
 import Navbar from "../../components/navbar/Navbar"
-import "./projects.scss"
-import React from 'react'
+import Project from "../../components/project/Project"
 
 const Projects = () => {
   return (
     <div>
       <Navbar />
+      <Project />
       <Footer />
     </div>
   )
