@@ -36,15 +36,17 @@ const Home = () => {
     <Navbar />
     <div className='home'>
       <div className='softwareIntro'>
-        <div className='wordIntro' data-aos="fade-down">
+        <div className='wordIntro'data-aos="zoom-out-down" >
           <h1>blueHike</h1>
           <h2>
           my name is bluehike, a passionate Software developer and a photographer.
           </h2>
           <h3></h3>
           </div>
-        <div className='dpIntro'>
-          <img src='simo.jpg' />
+        <div className='dpIntro' >
+          <img src='simo.jpg' data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" />
         </div>
       </div>
       <div className='projectIntro'>
@@ -72,8 +74,7 @@ const Home = () => {
       <div class="background">
         <div data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom">During my free time I spend most of my time taking photos of nature and beatifull people too</div>
-            <div class="gallery"  data-aos="fade-up"
-     data-aos-anchor-placement="top-center">
+            <div class="gallery"  data-aos="fade-right">
                 <div class="card">
                     <figure>
                         <img

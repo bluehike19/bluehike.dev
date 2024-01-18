@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <div className="projects">
     {projectData.map((card) => (
-      <div key={card.id} className="card">
+      <div key={card.id} className="card" data-aos="zoom-in-right">
         <div className="imageCard">
         <img src={card.img} alt={card.title} />
         </div>

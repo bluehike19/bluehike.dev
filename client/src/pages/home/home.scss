@@ -11,11 +11,12 @@
       align-items: center;
       justify-content: flex-start;
       height: 80vh;
-      gap: 100px;
+      gap: 5em;
 
 
       .wordIntro {
-        flex: 1;
+        flex: 1.5;
+        padding: 30px;
 
         h1 {
           background: #B7DEED;
@@ -27,6 +28,7 @@
       }
       .dpIntro {
         flex: 1;
+        padding: 50px;
 
           animation-name: ani-float;
           animation-duration: 3s;
