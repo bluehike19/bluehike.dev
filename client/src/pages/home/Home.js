@@ -66,12 +66,13 @@ const Home = () => {
           <div className='buttonsText'>You can check some of my projects. Both for fun and Clients just to improve my skills</div>
         </div>
         <div className='projectcard' data-aos="zoom-in-up">
-          <div className='cards'>
-          <img src='forest.jpg' />
+        {sampleProjectData.map((card) => (
+          <div key={card.id} className='cards'>
+            <div></div>
           </div>
-          <div className='cards'></div>
-          <div className='cards'></div>
+        ))}
         </div>
+        <button>hello</button>
       </div>
       <div class="background">
         <div data-aos="fade-up"
