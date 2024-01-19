@@ -3,7 +3,7 @@
 const projectData = [
     {
       id: 1,
-      img: 'https://placekitten.com/200/300', // replace with your image URLs
+      img: 'https://placekitten.com/200/300',
       title: 'Card 1',
       desc: 'Description for Card 1',
       link: 'https://example.com/card1',
@@ -48,7 +48,7 @@ const projectData = [
   const sampleProjectData = [
     {
       id: 1,
-      img: 'https://placekitten.com/200/300', // replace with your image URLs
+      img: 'https://placekitten.com/200/300',
       title: 'Card 1',
       desc: 'Description for Card 1',
       link: 'https://example.com/card1',
