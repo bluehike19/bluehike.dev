@@ -2,7 +2,8 @@ import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import "./home.scss"
-import sampleProjectData from "../../data"
+import home from '../../components/home/home'
+// import sampleProjectData from "../../data"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
@@ -66,7 +67,7 @@ const Home = () => {
           </div>
           <div className='buttonsText'>You can check some of my projects. Both for fun and Clients just to improve my skills</div>
         </div>
-        <div className='projectcard' data-aos="zoom-in-up">
+        {/* <div className='projectcard' data-aos="zoom-in-up">
         {sampleProjectData.map((card) => (
           <div key={card.id} className='cards'>
             <div className='imgCard'>
@@ -78,7 +79,8 @@ const Home = () => {
             </div>
           </div>
         ))}
-        </div>
+        </div> */}
+        <home />
         <button>hello</button>
       </div>
       <div class="background">
