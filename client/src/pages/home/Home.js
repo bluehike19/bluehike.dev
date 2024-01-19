@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import "./home.scss"
+import sampleProjectData from "../../data"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
@@ -68,7 +69,13 @@ const Home = () => {
         <div className='projectcard' data-aos="zoom-in-up">
         {sampleProjectData.map((card) => (
           <div key={card.id} className='cards'>
-            <div></div>
+            <div className='imgCard'>
+              <img src={card.img} alt={card.title} />
+            </div>
+            <div className='descriptionCard'>
+              <p></p>
+              <button></button>
+            </div>
           </div>
         ))}
         </div>
