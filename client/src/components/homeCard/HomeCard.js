@@ -1,12 +1,12 @@
 import React from 'react'
-import sampleProjectData from "../../data"
+import projectData from "../../data"
 import './home.scss'
 
 const home = () => {
   return (
     <div>
     <div className='projectcard' data-aos="zoom-in-up">
-    {sampleProjectData.map((card) => (
+    {projectData.map((card) => (
         <div key={card.id} className='cards'>
         <div className='imgCard'>
           <img src={card.img} alt={card.title} />  
@@ -16,6 +16,7 @@ const home = () => {
           <button></button>
         </div>
       </div>
+      
     ))}
     </div>
     </div>
