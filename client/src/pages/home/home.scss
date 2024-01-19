@@ -74,6 +74,7 @@
 
             .projectdiv {
               display: flex;
+              border-bottom: 1px solid themed("border");
 
               .buttons {
                 flex: 1;
