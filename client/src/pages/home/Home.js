@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
+import HomeCard from '../../components/homeCard/HomeCard'
 import "./home.scss"
-import home from '../../components/home/home'
+
 // import sampleProjectData from "../../data"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -80,7 +81,7 @@ const Home = () => {
           </div>
         ))}
         </div> */}
-        <home />
+        <HomeCard />
         <button>hello</button>
       </div>
       <div class="background">
