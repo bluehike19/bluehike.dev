@@ -81,7 +81,7 @@ const Home = () => {
           </div>
         ))}
         </div> */}
-        <HomeCard />
+        {/* <HomeCard /> */}
         <button>hello</button>
       </div>
       <div class="background">
