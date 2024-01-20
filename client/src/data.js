@@ -1,6 +1,6 @@
 // data.js
 
-const projectData = [
+  const projectData = [
     {
       id: 1,
       img: 'https://placekitten.com/200/300',
@@ -69,5 +69,5 @@ const projectData = [
     },
   ]
   
-  export default { projectData, sampleProjectData };
+  export  { projectData, sampleProjectData };
   
