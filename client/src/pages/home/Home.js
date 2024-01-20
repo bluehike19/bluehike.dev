@@ -68,19 +68,7 @@ const Home = () => {
           </div>
           <div className='buttonsText'>You can check some of my projects. Both for fun and Clients just to improve my skills</div>
         </div>
-        {/* <div className='projectcard' data-aos="zoom-in-up">
-        {sampleProjectData.map((card) => (
-          <div key={card.id} className='cards'>
-            <div className='imgCard'>
-              <img src={card.img} alt={card.title} />
-            </div>
-            <div className='descriptionCard'>
-              <p></p>
-              <button></button>
-            </div>
-          </div>
-        ))}
-        </div> */}
+       
         {/* <HomeCard /> */}
         <button>hello</button>
       </div>
