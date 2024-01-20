@@ -68,7 +68,7 @@ const Home = () => {
           </div>
           <div className='buttonsText'>You can check some of my projects. Both for fun and Clients just to improve my skills</div>
         </div>
-       
+       <div className='cards'></div>
         {/* <HomeCard /> */}
         <button>hello</button>
       </div>
