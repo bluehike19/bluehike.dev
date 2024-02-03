@@ -1,8 +1,9 @@
 import "./navbar.scss"
 import { DarkModeContext } from "../../context/DarkModeContext"
 import React, { useContext, useEffect, useState } from 'react'
-import { BsBrightnessHigh, BsGithub, BsMoon, BsX, BsList } from "react-icons/bs";
+import { BsBrightnessHigh,  BsMoon, BsList } from "react-icons/bs";
 import { Link, useLocation } from "react-router-dom"
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext)
@@ -58,7 +59,7 @@ const Navbar = () => {
               <BsMoon className="navbarIcon" onClick={toggle} />
               )}
               <a href='https://github.com/bluehike19' target="_blank" rel="noopener noreferrer">
-              <BsGithub className="navbarIcon" />
+              <FaGithub className="navbarIcon" />
               </a>
               <div className="toggleIcons">
                 <BsList />
