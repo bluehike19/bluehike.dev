@@ -43,29 +43,29 @@ const projectData = [
     },
   ];
 
-const sampleProjectData = [
-    {
-      id: 1,
-      img: 'https://placekitten.com/200/300',
-      title: 'Card 1',
-      desc: 'Description for Card 1',
-      link: 'https://example.com/card1',
-    },
-    {
-      id: 2,
-      img: 'https://placekitten.com/201/300',
-      title: 'Card 2',
-      desc: 'Description for Card 2',
-      link: 'https://example.com/card2',
-    },
-    {
-      id: 3,
-      img: 'https://placekitten.com/202/300',
-      title: 'Card 3',
-      desc: 'Description for Card 3',
-      link: 'https://example.com/card3',
-    },
-  ]
+// const sampleProjectData = [
+//     {
+//       id: 1,
+//       img: 'https://placekitten.com/200/300',
+//       title: 'Card 1',
+//       desc: 'Description for Card 1',
+//       link: 'https://example.com/card1',
+//     },
+//     {
+//       id: 2,
+//       img: 'https://placekitten.com/201/300',
+//       title: 'Card 2',
+//       desc: 'Description for Card 2',
+//       link: 'https://example.com/card2',
+//     },
+//     {
+//       id: 3,
+//       img: 'https://placekitten.com/202/300',
+//       title: 'Card 3',
+//       desc: 'Description for Card 3',
+//       link: 'https://example.com/card3',
+//     },
+  // ]
   
-  export default { projectData, sampleProjectData };
+  export default projectData;
   
