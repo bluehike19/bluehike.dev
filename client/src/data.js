@@ -1,6 +1,4 @@
-// data.js
-
-  const projectData = [
+const projectData = [
     {
       id: 1,
       img: 'https://placekitten.com/200/300',
@@ -45,7 +43,7 @@
     },
   ];
 
-  const sampleProjectData = [
+const sampleProjectData = [
     {
       id: 1,
       img: 'https://placekitten.com/200/300',
@@ -69,5 +67,5 @@
     },
   ]
   
-  export  { projectData, sampleProjectData };
+  export default { projectData, sampleProjectData };
   
