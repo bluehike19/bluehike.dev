@@ -3,15 +3,29 @@ import "./project.scss"
 import React from 'react'
 
 const Project = () => {
-  const [modalVisible, setModalVisible] = useState(false);
+  // const [modalVisible, setModalVisible] = useState(false);
 
-  const openModal = () => {
+  // const openModal = () => {
+  //   setModalVisible(true);
+  // };
+
+  // const closeModal = () => {
+  //   setModalVisible(false);
+  // };
+
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedCard, setSelectedCard] = useState(null);
+
+  const openModal = (card) => {
+    setSelectedCard(card);
     setModalVisible(true);
   };
 
   const closeModal = () => {
+    setSelectedCard(null);
     setModalVisible(false);
   };
+
   return (
     <div className="projects">
     {projectData.map((card) => (
@@ -21,7 +35,14 @@ const Project = () => {
         </div>
         <div className="descCard">
         <h2>{card.title}</h2>
-        <p>{card.desc}</p>
+        <p>
+              {card.desc.length > 100 ? `${card.desc.slice(0, 100)}...` : card.desc}
+              {' '}
+              <span className="read-more" onClick={() => openModal(card)}>
+                Read More
+              </span>
+            </p>
+        {/* <p>{card.desc}</p> */}
         <a href={card.link} target="_blank" rel="noopener noreferrer">
           Learn more
         </a>
