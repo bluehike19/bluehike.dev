@@ -3,6 +3,11 @@ import "./project.scss"
 import React from 'react'
 
 const Project = () => {
+  const [modalVisible, setModalVisible] = useState(false);
+
+  const openModal = () => {
+    setModalVisible(true);
+  };
   return (
     <div className="projects">
     {projectData.map((card) => (
