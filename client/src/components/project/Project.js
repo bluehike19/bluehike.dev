@@ -8,6 +8,10 @@ const Project = () => {
   const openModal = () => {
     setModalVisible(true);
   };
+
+  const closeModal = () => {
+    setModalVisible(false);
+  };
   return (
     <div className="projects">
     {projectData.map((card) => (
