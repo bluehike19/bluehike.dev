@@ -1,6 +1,6 @@
 import projectData from "../../data"
 import "./project.scss"
-import React from 'react'
+import React, { useState } from 'react'
 
 const Project = () => {
   // const [modalVisible, setModalVisible] = useState(false);
@@ -49,6 +49,18 @@ const Project = () => {
         </div>
       </div>
     ))}
+     {modalVisible && selectedCard && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close" onClick={closeModal}>&times;</span>
+            <h2>{selectedCard.title}</h2>
+            <p>{selectedCard.desc}</p>
+            <a href={selectedCard.link} target="_blank" rel="noopener noreferrer">
+              Learn more
+            </a>
+          </div>
+        </div>
+      )}
   </div>
   )
 }
