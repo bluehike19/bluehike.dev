@@ -3,7 +3,7 @@ const projectData = [
       id: 1,
       img: 'https://placekitten.com/200/300',
       title: 'Card 1',
-      desc: 'Description for Card 1',
+      desc: 'Description for Card 1 The card descriptions are truncated to 100 characters with a "Read More link When the Read More link is clicked, the openModal function is called, displaying a modal with the full card description. The modal can be closed by clicking the close button or outside the modal',
       link: 'https://example.com/card1',
     },
     {
