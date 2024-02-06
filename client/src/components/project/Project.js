@@ -4,18 +4,6 @@ import React, { useState } from 'react'
 
 const Project = () => {
   
-  const [modalVisible, setModalVisible] = useState(false);
-  const [selectedCard, setSelectedCard] = useState(null);
-
-  const openModal = (card) => {
-    setSelectedCard(card);
-    setModalVisible(true);
-  };
-
-  const closeModal = () => {
-    setSelectedCard(null);
-    setModalVisible(false);
-  };
 
   return (
     <div className="projects">
