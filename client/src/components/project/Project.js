@@ -14,14 +14,7 @@ const Project = () => {
         </div>
         <div className="descCard">
         <h2>{card.title}</h2>
-        <p>
-              {card.desc.length > 100 ? `${card.desc.slice(0, 100)}...` : card.desc}
-              {' '}
-              <span className="read-more" onClick={() => openModal(card)}>
-                Read More
-              </span>
-            </p>
-        {/* <p>{card.desc}</p> */}
+        <p>{card.desc}</p>
         <a href={card.link} target="_blank" rel="noopener noreferrer">
           Learn more
         </a>
