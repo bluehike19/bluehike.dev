@@ -3,16 +3,7 @@ import "./project.scss"
 import React, { useState } from 'react'
 
 const Project = () => {
-  // const [modalVisible, setModalVisible] = useState(false);
-
-  // const openModal = () => {
-  //   setModalVisible(true);
-  // };
-
-  // const closeModal = () => {
-  //   setModalVisible(false);
-  // };
-
+  
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
 
